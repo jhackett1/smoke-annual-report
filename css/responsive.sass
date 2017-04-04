@@ -1,0 +1,127 @@
+// BIIIIIG Desktop layout
+@media screen and (min-width:1500px)
+  main#content
+    section.number
+      aside:first-of-type
+        span
+          font-size: 15.5em
+      aside:last-of-type
+        h2
+          font-size: 5em
+        p
+          font-size: 1em
+
+    section.voxbox
+      aside
+        img
+          width: 160px
+          height: 160px
+        p.testimonial
+          font-size: 1em
+
+// Desktop layout
+@media screen and (min-width:1200px)
+  main#content
+    section#conclusion
+      height: 100vh
+
+      aside:last-of-type
+        p.big
+          font-size: 2.5em
+
+// Tablet layout
+@media screen and (min-width:600px) and (max-width:1200px)
+  section#headline
+    h1
+      font-size: 3em
+      span
+        font-size: 3.5em
+
+  main#content
+    section.voxbox
+      flex-direction: column
+      aside
+        flex-direction: column
+        margin: 20px
+        text-align: center
+        div
+          text-align: center
+        p.testimonial::before
+          position: absolute
+          display: block
+          content: ""
+          left: 50%
+          top: -60px
+          width: 0
+          height: 0
+          border-top: 40px solid transparent
+          border-bottom: 40px solid transparent
+          border-right: 40px solid #efefef
+          transform: translateX(-50%) rotate(90deg)
+
+    section.number
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      align-items: flex-start
+      aside
+        flex: 0 1
+        padding: 20px
+      aside:first-of-type
+        span
+          text-align: left
+          font-size: 8em
+          margin-left: 0px
+
+// Phone layout
+@media screen and (max-width:600px)
+  section#headline
+    h1
+      font-size: 2em
+      span
+        font-size: 3.5em
+
+  main#content
+    section#conclusion
+      flex-direction: column
+    section.voxbox
+      flex-direction: column
+      aside
+        flex-direction: column
+        margin: 20px
+        text-align: center
+        div
+          text-align: center
+        p.testimonial::before
+          position: absolute
+          display: block
+          content: ""
+          left: 50%
+          top: -60px
+          width: 0
+          height: 0
+          border-top: 40px solid transparent
+          border-bottom: 40px solid transparent
+          border-right: 40px solid #efefef
+          transform: translateX(-50%) rotate(90deg)
+
+    section.number
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      align-items: flex-start
+      aside
+        flex: 0 1
+        padding: 20px
+
+      aside:first-of-type
+        span
+          text-align: left
+          font-size: 6em
+          margin-left: 0px
+
+      aside:last-of-type
+        h2
+          font-size: 2.5em
+        p
+          font-size: 0.7em
