@@ -17,6 +17,24 @@ p {
   letter-spacing: 0.25rem;
   -webkit-font-smoothing: antialiased; }
 
+a.cta:hover {
+  background-color: rgba(173, 56, 70, 0.9); }
+
+a.cta {
+  padding: 20px;
+  margin: 40px 0px;
+  border-radius: 2px;
+  background-color: #ad3846;
+  color: #f6f6f6;
+  text-align: center;
+  display: inline;
+  font-weight: 700;
+  font-family: "Source Sans Pro", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  width: 270px; }
+
 section#progress {
   position: fixed;
   width: 100%;
@@ -339,13 +357,14 @@ main#content {
           letter-spacing: 0px; }
       main#content section.voxbox aside p.testimonial {
         width: 200px;
-        background-color: #efefef;
+        background-color: #ad3846;
         padding: 10px;
         font-weight: 100;
         letter-spacing: 0px;
         font-size: 0.9em;
         position: relative;
-        text-transform: none; }
+        text-transform: none;
+        color: #f6f6f6; }
       main#content section.voxbox aside p.testimonial::before {
         position: absolute;
         display: block;
@@ -356,7 +375,7 @@ main#content {
         height: 0;
         border-top: 30px solid transparent;
         border-bottom: 30px solid transparent;
-        border-right: 30px solid #efefef;
+        border-right: 30px solid #ad3846;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
       main#content section.voxbox aside img {
